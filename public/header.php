@@ -1,10 +1,32 @@
+
+<?php
+// Определите заголовок текущей страницы
+$pageTitle = "Главная страница";
+
+// Проверка, если открыта другая страница, измените заголовок соответственно
+if ($_SERVER['REQUEST_URI'] === '/about.php') {
+  $pageTitle = "О нас";
+} elseif ($_SERVER['REQUEST_URI'] === '/contact.php') {
+  $pageTitle = "Контакты";
+} elseif ($_SERVER['REQUEST_URI'] === '/products.php') {
+  $pageTitle = "Продукты";
+}
+elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
+    $pageTitle = "Частые вопросы";
+  }
+  
+
+// Вывод заголовка страницы в теге <title>
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Max Vel</title>
+    <title>MaxVel-<? echo $pageTitle?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -55,9 +77,9 @@
                                             <li><a href="about.php">О нас</a></li>
                                             <li><a href="#">Наши услуги <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="candidate.html">Разработка зайтов </a></li>
-                                                    <li><a href="job_details.html">SEO оптимизация </a></li>
-                                                    <li><a href="elements.html">Аудит веб сайта</a></li>
+                                                    <li><a href="web_dew.php">Разработка Сайтов </a></li>
+                                                    <li><a href="seo.php">SEO оптимизация </a></li>
+                                                    <li><a href="elements.html">Аудит веб сайтов</a></li>
                                                     <li><a href="elements.html">Реклама в социальных сетя</a></li>
                                                     <li><a href="elements.html">Реклама в посковых системах</a></li>
                                                     <li><a href="elements.html">Аудит веб сайта</a></li>
