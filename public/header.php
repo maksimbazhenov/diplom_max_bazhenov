@@ -79,12 +79,7 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                                                 <ul class="submenu">
                                                     <li><a href="web_dew.php">Разработка Сайтов </a></li>
                                                     <li><a href="seo.php">SEO оптимизация </a></li>
-                                                    <li><a href="elements.html">Аудит веб сайтов</a></li>
-                                                    <li><a href="elements.html">Реклама в социальных сетя</a></li>
-                                                    <li><a href="elements.html">Реклама в посковых системах</a></li>
-                                                    <li><a href="elements.html">Аудит веб сайта</a></li>
-                                                    <li><a href="elements.html">Аудит веб сайта</a></li>
-
+                                                    <li><a href="elements.html">SMM-продвижение</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Наши проекты<i class="ti-angle-down"></i></a>

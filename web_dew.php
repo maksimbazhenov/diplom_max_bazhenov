@@ -36,7 +36,7 @@
             существовании Вашей
             компании</li>
           <br>
-            <li style="border: 2px solid #ffd7e5"><i><b>15 000c</b> </i> </li>
+          <li style="border: 2px solid #ffd7e5"><i><b>15 000c</b> </i> </li>
         </ul>
       </div>
     </div>
@@ -54,7 +54,7 @@
           <br><br>
           <li style="border: 2px solid #ffd7e5"><i><b>15 000c</b> </i> </li>
         </ul>
-        </div>
+      </div>
     </div>
     <div class="card mb-4 shadow-sm border border-primary rounded-end">
       <div class="card-header">
@@ -70,7 +70,7 @@
 
           <li style="border: 2px solid #ffd7e5"><i><b>45 000c</b></i> </li>
         </ul>
-        
+
       </div>
     </div>
     <div class="card mb-4 shadow-sm border border-primary rounded-end">
@@ -83,11 +83,11 @@
           <li>Сайт с подробной
             информацией о Вашей
             компании и системай управления</li>
-            <br>
+          <br>
 
           <li style="border: 2px solid #ffd7e5"><i><b>60 000c</b> </i></li>
         </ul>
-       
+
       </div>
     </div>
     <div class="card mb-4 shadow-sm border border-primary rounded-end">
@@ -99,13 +99,87 @@
         <ul class="list-unstyled mt-1 mb-1">
           <li>Сайт, Вашей личной
             торговой площадки</li>
-           <br><br><br><br>
+          <br><br><br><br>
           <li style="border: 2px solid #ffd7e5"><i><b>50 000c</b> </i></li>
         </ul>
-        
+
       </div>
     </div>
   </div>
 </div>
+
+<div class="container">
+
+  <div class="pricing-header px-3 py-3  pb-md-4 mx-auto text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Оставить заявку на сайт
+    </button>
+  </div>
+</div>
+
+
+
+<!-- Модальное окно -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  data-backdrop="static">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Заявка на создание сайта</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Содержимое модального окна -->
+        <form action="/admin/prace/prace.php" method="POST" enctype="multipart/form-data" class="">
+
+          <div class="form-group">
+            <div class="form-group">
+              <label for="exampleInputName">Имя</label>
+              <input type="name" class="form-control" id="exampleInputName" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputTel">Номер телефона</label>
+              <input type="tel" class="form-control" id="exampleInputTel" placeholder="Номер телевона">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Emall адрес</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Emall адрес">
+              <small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с
+                кем-либо еще..</small>
+            </div>
+            <div class="form-group">
+              <select size="1" name="categories" class="form-group">
+
+                <option value="Сайт-визитка">Сайт-визитка</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Сайт-каталог">Сайт-каталог</option>
+                <option value="Корпоративный сайт">Корпоративный сайт</option>
+                <option value="Интернет магазин">Интернет магазин</option>
+                <option value="Другое">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="save" value="Отправить" class="btn btn-primary form-control">
+            </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .modal {
+    z-index: 311212000;
+    /* Или другое значение, если необходимо */
+  }
+</style>
+
 
 <?php require 'public/footer.php' ?>

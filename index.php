@@ -46,12 +46,7 @@
                         <p> <span>12</span>Проектов</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Аудит сайта</h4></a>
-                        <p> <span>50</span> Проектов</p>
-                    </div>
-                </div>
+                
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
                         <a href="jobs.html"><h4>SEO оптимизация</h4></a>
@@ -60,34 +55,11 @@
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Контент стратегии</h4></a>
+                        <a href="jobs.html"><h4>SMM-продвижение</h4></a>
                         <p> <span>50</span> Проектов</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Таргетирования реклама</h4></a>
-                        <p> <span>50</span> Проектов</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Teaching & Education</h4></a>
-                        <p> <span>50</span> Проектов</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Engineering</h4></a>
-                        <p> <span>50</span> Проектов</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xl-3 col-md-6">
-                    <div class="single_catagory">
-                        <a href="jobs.html"><h4>Garments / Textile</h4></a>
-                        <p> <span>50</span> Проектов</p>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -211,26 +183,7 @@
     
 
     <!-- job_searcing_wrap  -->
-    <div class="job_searcing_wrap overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 offset-lg-1 col-md-6">
-                    <div class="searching_text">
-                        <h3>Looking for a Job?</h3>
-                        <p>We provide online instant cash loans with quick approval </p>
-                        <a href="#" class="boxed-btn3">Browse Job</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-md-6">
-                    <div class="searching_text">
-                        <h3>Looking for a Expert?</h3>
-                        <p>We provide online instant cash loans with quick approval </p>
-                        <a href="#" class="boxed-btn3">Post a Job</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- job_searcing_wrap end  -->
 
     <!-- testimonial_area  -->

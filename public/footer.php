@@ -50,6 +50,7 @@
                             <li><a href="about.php">О нас </a></li>
                             <li><a href="contact.php">Оставить отзыв</a></li>
                             <li><a href="\faq.php">FAQ</a></li>
+                            <li><a href="\faq.php">Админ</a></li>
                         </ul>
 
                     </div>
@@ -63,7 +64,6 @@
                             <li><a href="#">Веб разработка</a></li>
                             <li><a href="#">SEO оптимизация</a></li>
                             <li><a href="#">Target и Социальные сети</a></li>
-                            <li><a href="#">Finance</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             Политика конфиденциальности
                         </h3>
                         <ul>
-                            <li><a href="#">Узнать подробнее</a></li>
+                            <li><a href="privacy.php">Узнать подробнее</a></li>
                         </ul>
                     </div>
                 </div>
