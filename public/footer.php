@@ -49,8 +49,8 @@
                         <ul>
                             <li><a href="about.php">О нас </a></li>
                             <li><a href="contact.php">Оставить отзыв</a></li>
-                            <li><a href="\faq.php">FAQ</a></li>
-                            <li><a href="\faq.php">Админ</a></li>
+                            <li><a href="faq.php">FAQ</a></li>
+                            <li><a href="login_admin.php">Админ</a></li>
                         </ul>
 
                     </div>

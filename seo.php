@@ -158,7 +158,7 @@
         <h4 class="modal-title" id="myModalLabel">Оставить заявку</h4>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="post" action='admin/application/aplocation_new.php'>
           <div class="form-group">
           <div class="form-group">
             <label for="exampleInputName">Имя</label>
@@ -174,15 +174,19 @@
             <small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с кем-либо еще..</small>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Телефон</label>
-            <input type="tel" name="tel" class="form-control" id="exampleInputTel" placeholder="Телфон">
+            <label for="exampleInputTell">Телефон</label>
+            <input type="tell" name="tell" class="form-control" id="exampleInputTell" placeholder="Телфон">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Опишите ваше желание</label>
+            <input type="text" name="comment" class="form-control" id="exampleInputComment" placeholder="Ваше желание">
           </div>
           
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Отправить</button>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
       </div>
     </div>
   </div>

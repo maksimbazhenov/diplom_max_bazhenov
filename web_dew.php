@@ -132,28 +132,27 @@
       </div>
       <div class="modal-body">
         <!-- Содержимое модального окна -->
-        <form action="/admin/prace/prace.php" method="POST" enctype="multipart/form-data" class="">
+        <form action="/admin/application/aplocation_new.php" method="POST" enctype="multipart/form-data" class="">
 
           <div class="form-group">
             <div class="form-group">
               <label for="exampleInputName">Имя</label>
-              <input type="name" class="form-control" id="exampleInputName" placeholder="Имя">
+              <input type="name" name="name" class="form-control" id="exampleInputName" placeholder="Имя">
             </div>
             <div class="form-group">
               <label for="exampleInputTel">Номер телефона</label>
-              <input type="tel" class="form-control" id="exampleInputTel" placeholder="Номер телевона">
+              <input type="tell" name="tell" class="form-control" id="exampleInputTel" placeholder="Номер телевона">
             </div>
 
             <div class="form-group">
               <label for="exampleInputEmail1">Emall адрес</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Emall адрес">
               <small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с
                 кем-либо еще..</small>
             </div>
             <div class="form-group">
               <select size="1" name="categories" class="form-group">
-
                 <option value="Сайт-визитка">Сайт-визитка</option>
                 <option value="Landing Page">Landing Page</option>
                 <option value="Сайт-каталог">Сайт-каталог</option>
@@ -163,7 +162,7 @@
               </select>
             </div>
             <div class="form-group">
-              <input type="submit" name="save" value="Отправить" class="btn btn-primary form-control">
+              <button type="submit" class="btn btn-primary form-control">Отправить</button>
             </div>
         </form>
 

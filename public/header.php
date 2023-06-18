@@ -1,20 +1,39 @@
-
 <?php
 // Определите заголовок текущей страницы
 $pageTitle = "Главная страница";
+$pageDescript = "Мы компания, специализирующаяся на продвижении бизнеса в интернете. 
+Наша цель - помочь клиентам достичь бизнес-успеха в онлайн-мире. Мы предлагаем профессиональные услуги по SEO оптимизации,
+ контекстной рекламе, социальному медиа-маркетингу и другим видам цифрового маркетинга.
+  С нашим опытом и экспертизой, мы разрабатываем индивидуальные  стратегии для каждого клиента, 
+  гарантируя результативность и рост их бизнеса.
+Обращайтесь к нам для эффективного продвижения вашего бизнеса в онлайн-мире.";
 
 // Проверка, если открыта другая страница, измените заголовок соответственно
 if ($_SERVER['REQUEST_URI'] === '/about.php') {
-  $pageTitle = "О нас";
+    $pageTitle = "О нас";
+    $pageDescript = "В разделе описания нашего сайта вы найдете подробную информацию о нашей компании, специализации и услугах.
+     Мы являемся экспертами в области цифрового маркетинга и предлагаем комплексные решения по SEO оптимизации, 
+    контекстной рекламе, социальному медиа-маркетингу и другим стратегиям продвижения бизнеса в интернете.";
+} elseif ($_SERVER['REQUEST_URI'] === '/web_dew.php') {
+    $pageTitle = "Разработка сайтов";
+} elseif ($_SERVER['REQUEST_URI'] === '/seo.php') {
+    $pageTitle = "SEO-оптимизация и продвижение";
+} elseif ($_SERVER['REQUEST_URI'] === '/smm.php') {
+    $pageTitle = "SMM-продвижение";
 } elseif ($_SERVER['REQUEST_URI'] === '/contact.php') {
-  $pageTitle = "Контакты";
-} elseif ($_SERVER['REQUEST_URI'] === '/products.php') {
-  $pageTitle = "Продукты";
-}
-elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
+    $pageTitle = "Оставть отзыв";
+} elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
     $pageTitle = "Частые вопросы";
-  }
-  
+} else {
+    $pageTitle = "Главная страница";
+    $pageDescript = "Мы компания, специализирующаяся на продвижении бизнеса в интернете. 
+Наша цель - помочь клиентам достичь бизнес-успеха в онлайн-мире. Мы предлагаем профессиональные услуги по SEO оптимизации,
+ контекстной рекламе, социальному медиа-маркетингу и другим видам цифрового маркетинга.
+  С нашим опытом и экспертизой, мы разрабатываем индивидуальные  стратегии для каждого клиента, 
+  гарантируя результативность и рост их бизнеса.
+Обращайтесь к нам для эффективного продвижения вашего бизнеса в онлайн-мире.";
+}
+
 
 // Вывод заголовка страницы в теге <title>
 
@@ -26,8 +45,11 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>MaxVel-<? echo $pageTitle?></title>
-    <meta name="description" content="">
+    <title>MaxVel-
+        <? echo $pageTitle ?>
+    </title>
+    <meta name="description" content="<? echo $pageDescript ?>">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
@@ -64,7 +86,7 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                         <div class="row align-items-center">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                         <img src="img/logo2.png" alt="">
                                     </a>
                                 </div>
@@ -77,38 +99,29 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                                             <li><a href="about.php">О нас</a></li>
                                             <li><a href="#">Наши услуги <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="web_dew.php">Разработка Сайтов </a></li>
+                                                    <li><a href="web_dew.php">Разработка cайтов </a></li>
                                                     <li><a href="seo.php">SEO оптимизация </a></li>
-                                                    <li><a href="smm.php">SMM-продвижение</a></li>
+                                                    <li><a href="smm.php">CMM Продвижение</a></li>
+
                                                 </ul>
                                             </li>
                                             <li><a href="#">Наши проекты<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="">Выполненые</a></li>
-                                                    <li><a href="">В работе</a></li>
+                                                    <li><a href="#">Выполненые</a></li>
+                                                    <li><a href="#">В работе</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html"></a></li>
+
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <!-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="Appointment">
-                                    <div class="phone_num d-none d-xl-block">
-                                        <a class="boxed-btn3" href="#">Log in</a>
-                                    </div>
-                                    <div class="d-none d-lg-block">
-                                        <a class="boxed-btn3" href="#">Post a Job</a>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
