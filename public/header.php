@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_URI'] === '/about.php') {
                                             </li>
                                             <li><a href="#">Наши проекты<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="#">Выполненые</a></li>
+                                                    <li><a href="web_project.php">Выполненые</a></li>
                                                     <li><a href="#">В работе</a></li>
                                                 </ul>
                                             </li>

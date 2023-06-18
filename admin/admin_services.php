@@ -147,44 +147,8 @@
     
           <!-- <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1076" height="454" style="display: block; width: 1076px; height: 454px;"></canvas> -->
     
-          <h2>Отзывы</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>id</th>
-                  <th>date</th>
-                  <th>Имя</th>
-                  <th>Фото</th>
-                  <th>Email</th>
-                  <th>Сообшение</th>
-                  
-                  <th>Удалить</th>
-                </tr>
-              </thead>
-              <tbody>
-
-              <?php  $sql = $pdo->prepare("SELECT * FROM `subject` ORDER BY `id` DESC");
-              $sql->execute();
-              while ($res = $sql->fetch(PDO::FETCH_OBJ)):?>
-                <tr>
-                  <td><?php echo $res->id ?></td>
-                  <td><?php echo $res->date ?></td>
-                  <td><?php echo $res->name ?></td>
-                  <td> <img src="../img/user/<?php echo $res->filename?>" alt="" width='100px' height="70px"></td>
-                  <td><?php echo $res->email ?></td>
-                  <td><?php echo $res->message ?></td>
-                  <td>
-                  <form method="POST" action="rewiewS/rewiews_delet.php/<?php echo $res->id ?>">
-                  <input type="hidden" name="_method" value="DELETE">
-                  <button type="submit" class="btn btn-primary" style="margin-top: 2px;">Удалить</button>
-                  </form>
-                  </td>
-                </tr>
-                <?php endwhile ?>
-              </tbody>
-            </table>
-          </div>
+          <h2>Услуги</h2>
+         
         </main>
       </div>
     </div>
