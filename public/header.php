@@ -79,13 +79,13 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                                                 <ul class="submenu">
                                                     <li><a href="web_dew.php">Разработка Сайтов </a></li>
                                                     <li><a href="seo.php">SEO оптимизация </a></li>
-                                                    <li><a href="elements.html">SMM-продвижение</a></li>
+                                                    <li><a href="smm.php">SMM-продвижение</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Наши проекты<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="blog.html">Выполненые</a></li>
-                                                    <li><a href="single-blog.html">В работе</a></li>
+                                                    <li><a href="">Выполненые</a></li>
+                                                    <li><a href="">В работе</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html"></a></li>
@@ -93,7 +93,7 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <!-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="phone_num d-none d-xl-block">
                                         <a class="boxed-btn3" href="#">Log in</a>
@@ -105,7 +105,7 @@ elseif ($_SERVER['REQUEST_URI'] === '/faq.php') {
                             </div>
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 

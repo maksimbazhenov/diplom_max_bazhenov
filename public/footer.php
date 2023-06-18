@@ -17,22 +17,22 @@
                         <div class="socail_links">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://wa.me/996555005131">
                                         <i class="fa fa-whatsapp"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://t.me/maxbajenov">
                                     <i class="fa fa-telegram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="tel:+996555005131">
                                         <i class="fa fa-phone"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://instagram.com/max_bajenov?igshid=ZDc4ODBmNjlmNQ==">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
@@ -61,9 +61,9 @@
                             Отделы
                         </h3>
                         <ul>
-                            <li><a href="#">Веб разработка</a></li>
-                            <li><a href="#">SEO оптимизация</a></li>
-                            <li><a href="#">Target и Социальные сети</a></li>
+                            <li><a href="web_dew.php">Веб разработка</a></li>
+                            <li><a href="seo.php">SEO оптимизация</a></li>
+                            <li><a href="smm.php">Target и Социальные сети</a></li>
                         </ul>
                     </div>
                 </div>

@@ -43,20 +43,26 @@
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
                         <a href="\web_dew.php"><h4>Разработка сайтов</h4></a>
-                        <p> <span>12</span>Проектов</p>
+                        <p>от <span>15 000</span>с</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
                         <a href="jobs.html"><h4>SEO оптимизация</h4></a>
-                        <p> <span>50</span>Проектов</p>
+                        <p> от <span>19 000</span>сом/мес</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
                         <a href="jobs.html"><h4>SMM-продвижение</h4></a>
                         <p> <span>50</span> Проектов</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3 col-md-6">
+                    <div class="single_catagory">
+                        <a href="jobs.html"><h4>Консультация</h4></a> 
+                        <p> <span>50</span> </p>
                     </div>
                 </div>
                
