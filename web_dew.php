@@ -12,10 +12,10 @@
     </div>
   </div>
   <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-    <img src="img/banner/web_dew.jpg" alt="">
+    <img src="img/banner/web_dew.jpg" alt="" width="550" height="350">
   </div>
 </div>
-<div class="container mt-5">
+<section class="container mt-5">
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
     <h1 class="display-4" style="color:#007bff; "> <strong>Направление веб разработки</strong></h1>
@@ -106,7 +106,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="container">
 
@@ -143,27 +143,28 @@
               <label for="exampleInputTel">Номер телефона</label>
               <input type="tell" name="tell" class="form-control" id="exampleInputTel" placeholder="Номер телевона">
             </div>
+          </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">Emall адрес</label>
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Emall адрес">
-              <small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с
-                кем-либо еще..</small>
-            </div>
-            <div class="form-group">
-              <select size="1" name="categories" class="form-group">
-                <option value="Сайт-визитка">Сайт-визитка</option>
-                <option value="Landing Page">Landing Page</option>
-                <option value="Сайт-каталог">Сайт-каталог</option>
-                <option value="Корпоративный сайт">Корпоративный сайт</option>
-                <option value="Интернет магазин">Интернет магазин</option>
-                <option value="Другое">Другое</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary form-control">Отправить</button>
-            </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Emall адрес</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Emall адрес">
+            <small id="emailHelp" class="form-text text-muted">Мы никогда не будем делиться вашей электронной почтой с
+              кем-либо еще..</small>
+          </div>
+          <div class="form-group">
+            <select size="1" name="categories" class="form-group">
+              <option value="Сайт-визитка">Сайт-визитка</option>
+              <option value="Landing Page">Landing Page</option>
+              <option value="Сайт-каталог">Сайт-каталог</option>
+              <option value="Корпоративный сайт">Корпоративный сайт</option>
+              <option value="Интернет магазин">Интернет магазин</option>
+              <option value="Другое">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control">Отправить</button>
+          </div>
         </form>
 
       </div>

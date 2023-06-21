@@ -102,6 +102,7 @@ if ($_SERVER['REQUEST_URI'] === '/about.php') {
                                                     <li><a href="web_dew.php">Разработка cайтов </a></li>
                                                     <li><a href="seo.php">SEO оптимизация </a></li>
                                                     <li><a href="smm.php">CMM Продвижение</a></li>
+                                                    <li><a href="consalt.php">Консультация</a></li>
 
                                                 </ul>
                                             </li>

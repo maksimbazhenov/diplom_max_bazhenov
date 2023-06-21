@@ -13,11 +13,13 @@
     </div>
   </div>
   <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-    <img src="img/banner/smm.jpg" alt="">
+    <img src="img/banner/smm.jpg" alt="" width="550" height="380>
   </div>
 </div>
 
-<div class="container mt-5">
+
+
+
 
   
 

@@ -175,7 +175,7 @@
                   <td><?php echo $res->email ?></td>
                   <td><?php echo $res->message ?></td>
                   <td>
-                  <form method="POST" action="rewiewS/rewiews_delet.php/<?php echo $res->id ?>">
+                  <form method="POST" action="rewiews/rewiews_delet.php/<?php echo $res->id ?>">
                   <input type="hidden" name="_method" value="DELETE">
                   <button type="submit" class="btn btn-primary" style="margin-top: 2px;">Удалить</button>
                   </form>

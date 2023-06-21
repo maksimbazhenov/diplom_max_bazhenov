@@ -12,7 +12,7 @@
                         <p>
                             MaxVel@gmail.com <br>
                             +996 555 005 131 <br>
-                            Центральная азия
+                            Центральная Азия
                         </p>
                         <div class="socail_links">
                             <ul>

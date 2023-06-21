@@ -1,4 +1,5 @@
-<?php require 'public/header.php' ?>
+<?php require  'public/header.php' ?>
+<?php require_once 'connect/connect.php';?>
     <!-- header-end -->
 
     <!-- slider_area_start -->
@@ -13,16 +14,14 @@
                             <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">Мы верим, что силой онлайн-присутствия можно добиться 
                                 неограниченных возможностей для развития бизнеса. Наша команда опытных специалистов по цифровому маркетингу готова разработать
                                  и реализовать индивидуальный продукт адаптированный к вашим уникальным потребностям и целям.</p>
-                            <div class="sldier_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
-                                <a href="#" class="boxed-btn3">Upload your Resume</a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-            <img src="img/banner/baner.avif" alt="">
+            <img src="img/banner/baner.avif" alt="" width="550" height="350">
         </div>
     </div>
     <!-- slider_area_end -->
@@ -49,20 +48,20 @@
                 
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>SEO оптимизация</h4></a>
+                        <a href="seo.php"><h4>SEO оптимизация</h4></a>
                         <p> от <span>19 000</span>сом/мес</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
                         <a href="jobs.html"><h4>SMM-продвижение</h4></a>
-                        <p> <span>50</span> Проектов</p>
+                        <p> <span>Широкий</span> спектр г</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_catagory">
-                        <a href="jobs.html"><h4>Консультация</h4></a> 
-                        <p> <span>50</span> </p>
+                        <a href="consalt.php"><h4>Консультация</h4></a> 
+                        <p> <span>В удобное время</span> </p>
                     </div>
                 </div>
                
@@ -88,97 +87,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="candidate_active owl-carousel">
+                    <?php $sql = $pdo->prepare("SELECT * FROM `work`");
+                    $sql->execute();
+                    while ($res = $sql->fetch(PDO::FETCH_OBJ)): ?>
                         <div class="single_candidates text-center">
                             <div class="thumb">
-                                <img src="img/candiateds/1.png" alt="">
+                                <img src="img/job/<?php echo $res->filename ?>" alt="">
                             </div>
-                            <a href="#"><h4>Максим Баженов</h4></a>
-                            <p>Senior Software Engineer</p>
+                            <a href="#"><h4><?php echo $res->name ?></h4></a>
+                            <p><h4><?php echo $res->job_title ?></p>
                         </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/2.png" alt="">
-                            </div>
-                            <a href="#"><h4>Александра Литвиненко</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/5.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/6.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/7.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/8.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/10.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
+                    <?php endwhile ?>  
+                       
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -203,60 +125,29 @@
                 </div>
                 <div class="col-xl-12">
                     <div class="testmonial_active owl-carousel">
+                    <?php $sql = $pdo->prepare("SELECT * FROM `subject`");
+                    $sql->execute();
+                    while ($res = $sql->fetch(PDO::FETCH_OBJ)): ?>
                         <div class="single_carousel">
                             <div class="row">
                                 <div class="col-lg-11">
                                     <div class="single_testmonial d-flex align-items-center">
                                         <div class="thumb">
-                                            <img src="img/testmonial/author.png" alt="">
+                                            <img src="img/user/<?php echo $res->filename ?>" alt="" ;>
                                             <div class="quote_icon">
                                                 <i class="Flaticon flaticon-quote"></i>
                                             </div>
                                         </div>
                                         <div class="info">
-                                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                            <span>Максим Беженов</span>
+                                            <p><?php echo $res->message ?> <br></p>
+                                            <span><?php echo $res->name ?> <br></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="single_carousel">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="single_testmonial d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="img/testmonial/author.png" alt="">
-                                            <div class="quote_icon">
-                                                <i class=" Flaticon flaticon-quote"></i>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                            <span>- Micky Mouse</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_carousel">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="single_testmonial d-flex align-items-center">
-                                        <div class="thumb">
-                                            <img src="img/testmonial/author.png" alt="">
-                                            <div class="quote_icon">
-                                                <i class="Flaticon flaticon-quote"></i>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
-                                            <span>- Micky Mouse</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endwhile ?>
+                       
                     </div>
                 </div>
             </div>

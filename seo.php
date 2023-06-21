@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-    <img src="img/banner/seo.jpg" alt="">
+    <img src="img/banner/seo.jpg" alt="" class="cerousel-imeges" width="550" height="380">
   </div>
 </div>
 
@@ -154,11 +154,10 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-
         <h4 class="modal-title" id="myModalLabel">Оставить заявку</h4>
       </div>
       <div class="modal-body">
-        <form method="post" action='admin/application/aplocation_new.php'>
+        <form method="post" action='admin/application/aplocation_new.php' enctype="multipart/form-data">
           <div class="form-group">
           <div class="form-group">
             <label for="exampleInputName">Имя</label>
